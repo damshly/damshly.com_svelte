@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Github, Linkedin, Youtube } from "lucide-svelte";
+  import { Github, Linkedin, Youtube, Twitter } from "lucide-svelte";
   let aboutLines = [
     "🚀 About Me",
     "Back-end Developer | DevOps Enthusiast | Linux Power User",
@@ -36,12 +36,12 @@
     <a href="https://github.com/damshly" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
       <Github class="w-5 h-5"/> GitHub
     </a>
-    <a href="https://linkedin.com/in/damshly" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
-      <Linkedin class="w-5 h-5"/> LinkedIn
+    <a href="https://x.com/Abdalrhman_Dam" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
+      <Twitter class="w-5 h-5"/> Twitter  
     </a>
-    <a href="https://youtube.com/@damshly" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
+    <!-- <a href="https://youtube.com/@damshly" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
       <Youtube class="w-5 h-5"/> YouTube
-    </a>
+    </a> -->
   </div>
 </div>
 

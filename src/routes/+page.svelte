@@ -26,12 +26,11 @@
   </h1>
 
   <!-- نبذة عنك -->
-<div class="text-gray-300 max-w-full sm:max-w-xl mb-6 text-base sm:text-lg space-y-2 flex flex-col items-center px-4">
-  {#each aboutLines as line}
-    <p class="break-words text-center">{line}</p>
-  {/each}
-</div>
-
+  <div class="text-gray-300 max-w-full sm:max-w-xl mb-6 text-base sm:text-lg space-y-2 flex flex-col items-center">
+    {#each aboutLines as line}
+      <p class="whitespace-nowrap">{line}</p>
+    {/each}
+  </div>
 
   <!-- روابط التواصل -->
   <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-gray-400">

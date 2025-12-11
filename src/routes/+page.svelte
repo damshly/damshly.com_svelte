@@ -1,5 +1,6 @@
 <script lang="ts">
   import { Github, Linkedin, Youtube, Twitter } from "lucide-svelte";
+
   let aboutLines = [
     "🚀 About Me",
     "Back-end Developer | DevOps Enthusiast | Linux Power User",
@@ -9,7 +10,7 @@
   ];
 </script>
 
-<div class="h-screen w-screen bg-gradient-to-bl from-black via-gray-900 to-purple-950 relative overflow-hidden flex flex-col items-center justify-center text-center px-4">
+<div class="min-h-screen w-full bg-gradient-to-bl from-black via-gray-900 to-purple-950 relative overflow-hidden flex flex-col items-center justify-center text-center px-4 sm:px-6">
 
   <!-- نجوم -->
   {#each Array(80) as _, i}
@@ -20,28 +21,26 @@
   {/each}
 
   <!-- الاسم -->
-  <h1 class="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-blue-400 to-purple-400 animate-text-glow mb-4">
+  <h1 class="text-4xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-blue-400 to-purple-400 animate-text-glow mb-4">
     Damshly
   </h1>
 
   <!-- نبذة عنك -->
-<div class="text-gray-300 max-w-xl mb-6 text-lg space-y-2 flex flex-col items-center">
+<div class="text-gray-300 max-w-full sm:max-w-xl mb-6 text-base sm:text-lg space-y-2 flex flex-col items-center px-4">
   {#each aboutLines as line}
-    <p class="whitespace-nowrap">{line}</p>
+    <p class="break-words text-center">{line}</p>
   {/each}
 </div>
 
-  <!-- روابط التواصل مع أيقونات -->
-  <div class="flex gap-6 text-gray-400">
+
+  <!-- روابط التواصل -->
+  <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-gray-400">
     <a href="https://github.com/damshly" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
       <Github class="w-5 h-5"/> GitHub
     </a>
     <a href="https://x.com/Abdalrhman_Dam" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
       <Twitter class="w-5 h-5"/> Twitter  
     </a>
-    <!-- <a href="https://youtube.com/@damshly" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
-      <Youtube class="w-5 h-5"/> YouTube
-    </a> -->
   </div>
 </div>
 
